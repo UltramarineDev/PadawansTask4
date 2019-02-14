@@ -8,9 +8,13 @@ namespace PadawansTask4
         {
             // put your code here
             //throw new NotImplementedException();
-            if (str == null || str == "")
+            if (str == null)
             {
-                throw new ArgumentException(); 
+                throw new ArgumentNullException(); 
+            }
+            if (str == "")
+            {
+                throw new ArgumentException();
             }
             char[] array;
             array = str.ToCharArray();
